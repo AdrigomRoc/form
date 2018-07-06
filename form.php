@@ -4,8 +4,8 @@
 <body>
 
     <?php
-        $email = $_GET["email"];
-        $password = $_GET["password"];
+        $email = $_POST["email"];
+        $password = $_POST["password"];
         if($email && $password){
             echo "Email: $email , Password: $password";
         }
