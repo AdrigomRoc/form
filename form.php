@@ -10,7 +10,7 @@
             echo "Email: $email , Password: $password";
         }
     ?>
-    <form action="form.php" method="get">
+    <form action="form.php" method="post">
         Correu:
         <input type="email" name="email">
         <br /> 
