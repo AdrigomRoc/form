@@ -14,8 +14,10 @@
     */
         $email = $_POST["email"];
         $password = $_POST["password"];
-        if($email && $password){
-            echo "Email: $email , Password: $password";
+        if($password=="test"){
+            echo "Accés correcte";
+        }else{
+            echo "Accés incorrecte";
         }
     ?>
     <form action="form.php" method="post">
