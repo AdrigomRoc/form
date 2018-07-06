@@ -12,19 +12,16 @@
         que fixar-nos que els formularis tinguin post+https
         per que la informació estigui xifrada en el header.
     */
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-        if($email && $password){
-            echo "Email: $email , Password: $password";
+        $text = $_POST["text"];
+        if($text){
+            $x=strlen($text);
+            echo "El nombre de caracters es de: ".$x;
         }
     ?>
     <form action="form.php" method="post">
-        Correu:
-        <input type="email" name="email">
+        Escriu:
+        <input type="text" name="text">
         <br /> 
-        Contrasenya:
-        <input type="password" name="password">
-        <br />
         <input type="submit">
     </form>
 </body>
